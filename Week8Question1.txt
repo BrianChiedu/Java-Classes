@@ -1,6 +1,7 @@
 Question 1
 
-1.	Write a function that accepts a 2D char array and two chars. The purpose of the function is to replace every occurrence of the first char with the second char. The function should also return how many letters were replaced
+1.	Write a function that accepts a 2D char array and two chars. The purpose of the function is to replace every occurrence of the first char with the second char.
+The function should also return how many letters were replaced
 Test it in the main method. For example, create an array with these characters:
 	G, B, A, C, A, B
 	K, D, X, F, O, B
