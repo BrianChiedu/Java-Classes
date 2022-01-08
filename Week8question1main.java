@@ -20,6 +20,14 @@ class QuestionOne {
         System.out.println("Number of replaced letters are " + String.valueOf(replacements));
     }
 
+    /**
+     * Replaces elements in a 2D array
+     * Replaces occurences of varriable 1 with variable 2
+     * @param charArray
+     * @param character1
+     * @param character2
+     * @return
+     */
     public static int replacementmethod(char[][] charArray, char character1, char character2) {
         int replacedAmount = 0;
 
@@ -37,6 +45,11 @@ class QuestionOne {
         return replacedAmount;
     }
 
+    /**
+     * Prints an array passed in
+     *
+     * @param charArray
+     */
     public static void displayArray(char[][] charArray) {
         for (int i = 0; i < charArray.length; i++) {
             System.out.println(charArray[i]);
