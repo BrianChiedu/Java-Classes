@@ -17,12 +17,13 @@ class QuestionOne {
 
         displayArray(charArray);
 
-        System.out.println("Number of replaced letters are " + String.valueOf(replacements));
+        System.out.println("Number of replaced letters are " + replacements);
     }
 
     /**
      * Replaces elements in a 2D array
-     * Replaces occurences of varriable 1 with variable 2
+     * Replaces occurences of variable 1 with variable 2
+     *
      * @param charArray
      * @param character1
      * @param character2
