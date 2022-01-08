@@ -1,3 +1,5 @@
+package WeekEight;
+
 class WeekEightQuestionOne {
 
     public static void main(String[] args) {
