@@ -1,0 +1,52 @@
+Assignment Title: 1024 Game
+
+Make an ASCII version of the 1024 game (also known as 2048). If you are not familiar with the game go to https://1024game.org/ to see how the game works.
+
+1.	We will make a slightly different version that lets the user choose how big the grid is. When the game starts the user will be asked to enter the desired dimensions of the grid. Since the grid must be square, the user only needs to enter one number. For example, if they enter 5, the game will be played on a 5 by 5 grid. The game should accept numbers between 4 and 10.
+10 marks
+
+2.	Before every turn, the game should display the current state of the game on the screen. The grid should be drawn using symbols + - |. Unlike in tic tac toe, in this game the outer edges of the grid need to be drawn too. Also note that a 4 digit number needs to fit inside each cell. Try to make cell height visually match cell width for better gaming experience.
+10 marks
+
+3.	In the beginning of the game two ‘1’ tiles are added to two random cells in the grid. Every subsequent turn a ‘1’ tile is added to an unoccupied cell in the grid. Unlike in the previous assignment it would be very inefficient to randomly select a cell from the set of all cells because closer to the end of the game only one cell will be free. Instead at the end of every turn you should make a list of all free cells and randomly select a free cell using that list.
+15 marks
+
+4.	Every turn the user can choose between four options: move all the numbers up, down, left or right. You may display a menu with options:
+1.	Up
+2.	Down
+3.	Left
+4.	Right.
+      Or use WASD: W for up, S for Down, A for Left and D for Right. Make sure to let the user know how to interact with the game. If the user enters anything other than the four valid characters/numbers the game should reject them and          draw the grid and input instructions again.
+10 marks
+
+5.	After the user makes a move all number tiles should attempt to move in the selected direction. A tile should continue to move in the given direction until it either hits another tile with a different number and stops or hits a tile with the same name and merges with it. Make sure that the only reason a tile stopped moving is if there are no empty cells in the direction it is supposed to move, or that all tiles that were supposed to merge do merge.
+15 marks
+
+6.	When two tiles merge the resulting tile should have a number equal to their sum. For example, a 16 tile and another 16 tile make a 32 tile. This resulting number should then be added to the score.
+10 marks
+
+7.	If not a single tile moved or merged, the turn doesn’t count, the grid should be displayed again and the user asked to try a different move. Otherwise, the turn counts and the game should first check if a 1024 tile was created. If it was, the user should be told they won and allowed to continue playing.
+10 marks
+
+8.	The game should then make a list of empty tiles. If there are no empty tiles, the game ends.
+5 marks
+
+9.	Otherwise a new 1 tile is added to the grid as was described earlier and a new turn starts.
+
+
+
+
+There are marks for correct indentation
+5 marks
+
+Good variable names and comments.
+5 marks
+
+Proper use of methods.
+5 marks
+
+
+
+You will be required to demonstrate your program during the submission week.
+
+
