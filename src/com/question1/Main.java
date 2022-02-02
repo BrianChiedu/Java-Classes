@@ -6,8 +6,8 @@ public class Main {
 	// write your code here
         //char[][] charArray = new char [3][6];
         char[][] charArray = {  {'G','B','A','C','A','B'},
-                {'K','D','X','F','O','B'},
-                {'Z','H','S','A','D','C'} };
+                                {'K','D','X','F','O','B'},
+                                {'Z','H','S','A','D','C'} };
 
         display(charArray);
 
