@@ -1,0 +1,6 @@
+Create two arrays and swap where the two reference variables point such that array one points to array 2 and array two points to array 1.
+
+1. Two arrays should be created
+
+2. Where they point to should then be swapped
+    arr1 should point to arr2 then arr2 should point to arr1.

@@ -1,0 +1,5 @@
+Create max and min methods that accept an array of integers or an array of doubles or an array of characters. Be careful not to modify the contents
+of the arrays in the methods.
+
+Purpose of the method is unlcear - After an array is accepted what should happen
+Are we to find the maximum and minimum between 2 different arrays or is the method going to find the maximum and minimum of numbers within the array.
