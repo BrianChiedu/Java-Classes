@@ -8,11 +8,15 @@ public class Main {
 
         int[] arr2 = new int[] {2, 65, 34, 6, 18};
 
+        int[] arr3;
+
+        arr3 = arr1;
+
         arr1 = arr2;
 
-        arr2 = arr1;
+        arr2 = arr3;
 
-        System.out.println(arr1[4]);
+        System.out.println(arr1[3]);
 
 
     }

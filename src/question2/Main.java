@@ -1,4 +1,4 @@
-package com.question2;
+package question2;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-//       CASES FOR INDEX OUT OF BOUNDS
+        //       CASES FOR INDEX OUT OF BOUNDS
         //int[] arrayA = {1,2,3,4,5,6,6};
         //int[] arrayA = new int[] {1,1,1,1,1,1,1};
 
@@ -32,6 +32,7 @@ public class Main {
         }
 
         for(int i=0; i<=array.length; i++)
+
             if (array[i] != array[i + 1]) {
                 if (array[i] + 1 != array[i + 1]) {
                     smallestInteger = array[i] + 1;
