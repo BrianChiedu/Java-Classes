@@ -1,0 +1,9 @@
+Using method overloading create max (maximum) and min (minimum) methods that accept either 3 integers, 3 doubles or 3 characters.
+
+Method overloading is when there are multiple methods in the same class with the same name but different signatures and parameters.
+
+1. Create multiple overloaded methods which are min and max methods
+
+2. The overloaded methods should be able to receive parameters of int, double and character.
+
+3. In the methods, the maximum and minimum of the values passed into it would be found.
