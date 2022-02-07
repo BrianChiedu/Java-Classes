@@ -1,6 +1,7 @@
 package part2;
 
 import java.util.Locale;
+import java.util.Random;
 
 public class Main {
 
@@ -8,8 +9,9 @@ public class Main {
 
         String[] regularSports = {"Tennis", "Football", "Skating", "Jogging", "Basketball", "Baseball", "Curling", "Volleyball", "Cricket", "Badminton", "Squash", "Rugby"};
 
-        System.out.println(regularSports.length);
-        System.out.println();
+        String[] prefixes = {"Cyber", "Mega", "Hyper", "Neo"};
+
+        Random rnd = new Random();
 
         for (int i = 0; i< regularSports.length; i++){
             if (regularSports[i].endsWith("ball")){
@@ -19,8 +21,9 @@ public class Main {
                 regularSports[i] = regularSports[i].replace("C", "K");
             }
             else{
-                regularSports[i] = regularSports[i].toLowerCase(Locale.ROOT);
-                regularSports[i] = regularSports[i].replaceFirst("", "Cyber");
+                int select = rnd.nextInt(prefixes.length);
+                String newSport = prefixes[select] + regularSports[i].toLowerCase();
+                regularSports[i]=newSport;
             }
             System.out.println(regularSports[i]);
         }
