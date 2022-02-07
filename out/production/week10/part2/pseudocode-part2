@@ -1,0 +1,16 @@
+•	We want to write a program that generates a list of futuristic-sounding sports. Let’s start with an array that contains 12 different sports. For example: Tennis, Football, Skating, Jogging, Basketball,
+Baseball, Curling, Volleyball, Cricket, Badminton, Squash, Rugby.
+
+•	The program should loop through the list and modify the sport names following the following logic:
+o	If the name ends will “ball”, it should replace “ball” with “orb”.
+o	If the name starts with ‘C’, it should instead start with ‘K’.
+o	Otherwise one of the following should be appended to the beginning of the name: “Cyber”, “Mega”, “Hyper”, “Neo”. Make sure the original word no longer starts with a capital letter.
+•	Print the new sports on the screen.
+
+1. String array with 12 different sports
+
+2. A loop should be implemented with an if statement
+
+3. The logic should be applied in the if statement
+
+4. The new sports should be printed out
