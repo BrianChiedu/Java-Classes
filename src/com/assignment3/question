@@ -1,0 +1,51 @@
+##Cipher Game
+
+
+Make a game where a paragraph of text is “encrypted” using a simple substitution cipher and the player tries to decrypt it by using common letter combinations in English and deduction.
+You can play a similar game here: https://cryptograms.puzzlebaron.com/play.php Note that our game will work a bit differently.
+
+The game should have an array with 6 or more different Strings each containing a paragraph of text. Since a whole paragraph can’t normally fit on one line, paragraphs should be split into multiple lines using \n.
+You can try to place \n in such a way that they help figure out the message. When the game starts it should display a menu with two options: normal mode or test mode. In normal mode one of the quotes should be picked
+randomly. In test mode the user should be shown one more menu that displays truncated versions of the strings and let the user choose one. Truncated paragraphs should contain the maximum number of words that can fit within
+a 50-character limit or only the first line of the paragraph, whichever is shorter. This should be accomplished programmatically.
+15 marks
+
+After a string was chosen it needs to be encrypted with a substitution cipher. This means each letter that appears in the paragraph must be paired with another lowercase letter (as long as it is not the same letter).
+Then each letter in the paragraph gets replaced with its pair. Suppose we are encoding “Hello”. Given the following pairing: h > i, e > p, l > u, o > m. The result of encoding will be “ipuum”. The encoded paragraph should
+then be displayed, with original punctuation, spacing and line breaks preserved. Encoded letters should be lowercase.
+20 marks
+
+
+
+After the paragraph was encrypted the player can start decrypting it. This is done  one letter at a time. The user enters two letters: first letter is what they want to replace, and second letter is what they want to replace
+it with. The replacement letters should appear in UPPER CASE in the paragraph so that the player can tell which letters are still encrypted. For example, if they type “ul”, “ipuum” should become “ipLLm”. After each
+input the program should display the current state of the paragraph as well as all the user-picked pairs. For example, if next user types “ig” the program should display this:
+
+GpLLm
+
+u > L   i > G
+
+Note that closer to the end of the game there might be too many pairs to show on the same line, so you may need to use multiple lines.
+20 marks
+
+It should be impossible for one letter to be mapped (paired) to more than one letter or for multiple letters to be mapped to the same letter. So, if the user types “ih”, “i > G” should disappear. And the message will become
+“HpLLm”. Similarly, if they type “ml”, “u > L” should also disappear and the screen should now show this:
+
+HpuuL
+
+i > H   m > L
+
+If the user wants to simply erase a pair, they just need to type the second letter in the pair. For example if they type “h”, “i > H” pair will disappear and the message will become “ipuuL”.
+15 marks
+
+Every time the player enters a new letter pair the program should check whether the paragraph is the same as the original paragraph (ignoring letter cases). If it is, the player should be told their score. The score is equal
+to 1000 minus the number of seconds that passed between the encrypted paragraph being shown on the screen for the first time and the last input. If the player spent more than 1000 seconds, they get a score equal to zero.
+15 marks
+
+If the player types “help” the game should add one random valid pair and update the paragraph accordingly. Users can use “help” at most 5 times per game. Also the player should be able to type “reset” to erase all pairs and
+get the paragraph back to its initial completely encrypted state.
+15 marks
+
+You are encouraged to use Strings and String functions such as replace.
+
+You will be required to demonstrate your program during the submission week.
