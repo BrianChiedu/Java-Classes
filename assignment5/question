@@ -1,0 +1,66 @@
+Grade Assistant
+Make an application that opens a .csv file that contains grades for the whole class and lets the lecturer display and edit marks.
+
+•	When the application is launched, it should first ask the user to enter a file name e.g.(BSCH.csv)
+    o	If the file doesn’t exist, the program should exit.
+    o	Otherwise it should read the file.
+•	The file is expected to have the following structure.
+    o	The first row should contain the headers.
+        	The first two columns should be Student Name and Student ID.
+        	The last column name should be Average.
+        	The rest of the column names are various module names (CP, SAD,  etc..).
+Example
+
+
+
+Use can use example BSCH.csv for testing.
+(15 marks)
+
+
+
+
+The program should then read each row and store details from each row in a separate instance of a Student class.
+    •	Each Student class should contain a student name, student ID, their marks for each module and their average.
+    •	You will need two constructors , one that takes in name, id and marks, and one that takes in just name and id
+    •	All variables should be private , you will need to add getters for each.
+    •	Have a method setMark that takes in the module to change, and the grade, recalculate your average after any change to marks
+    •	Each student should be stored in an ArrayList of Students
+
+(15 marks)
+
+Using your list of students print out the marks to console in a table format.
+    •	You can use the Tab character to help format it.
+    •	If a mark is missing for a subject, a dash (minus sign) should be displayed instead.
+(15 marks)
+
+After the program displays the marking table it should show a menu with options. Every time a task is completed the updated marking table and the menu should be displayed. The menu should have the following entries:
+1.	Enter new marks.
+2.	Add new student
+3.	Remove student
+4.	Save changes
+5.	Exit
+(10 marks)
+
+If the user selects “Enter new marks” the user should be asked to enter Student ID.
+    •	If the entered Student ID cannot be found, the user should be alerted about this and return to the menu.
+    •	Otherwise for each module display the Module code and current mark and ask the user to enter a new mark or if they enter nothing skip to the next module.
+    •	If the entered mark is less than zero or greater than 100 the user should be asked to enter it again until they enter a valid mark.
+    •	After all marks are entered, the new average should be calculated and displayed on the screen.
+    (15 marks)
+
+If the user selects “Add new student“ they will be asked to enter a Student ID and Name.
+    •	The program should check that this Student ID doesn’t yet exist, and if it does, ask the user to enter it again.
+    •	After adding the student the user should be asked whether they want to add their marks as well. If they do, the marking process should be the same as described above.
+    (15 marks)
+
+If the user selects “Remove student”, they should be asked to enter a Student ID, and if it exists, delete the corresponding student from the list.
+(5 marks)
+
+If the user selects “Save changes”, overwrite your csv file with your new data.
+    •	The first row should have all the same headers.
+    •	For each student in the student list add a row with their Student name and Student ID , updated grades and average.
+    •	The resulting file should be a valid correctly formatted .csv file.
+    •	If the user selects “Exit”,
+        o	if they have made any changes use a confirm box to ask if they want to save their changes first,
+            	if not just exit
+(10 marks)
